@@ -43,7 +43,7 @@ export function getActionsByBotId(bot_id: string) {
     return instance.get<ActionWithModifiedParametersResponse[]>(`/bot/${bot_id}`);
 }
 
-// http://localhost:8888/backend/actions/p/:action_id
+// https://robyn.zeonhq.com/backend/actions/p/:action_id
 export function getActionById(action_id: string) {
     return instance.get<ActionWithModifiedParametersResponse>(`/p/${action_id}`);
 }

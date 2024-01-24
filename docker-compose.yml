@@ -17,7 +17,7 @@ services:
       - llm-server/.env
     ports:
       - 8002:8002
-      - 5678:5678
+      - 5679:5679
     depends_on:
       mysql:
         condition: service_healthy
@@ -64,7 +64,7 @@ services:
       dockerfile: Dockerfile
     image: codebanesr/dashboard:latest  # Add this line
     ports:
-      - 8000:8000
+      - 8004:8004
     volumes:
       - shared_data:/app/shared_data
     networks:

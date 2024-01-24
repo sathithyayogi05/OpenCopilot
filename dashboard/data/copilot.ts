@@ -33,7 +33,7 @@ export async function getCopilot(id: string) {
   return await instance.get<{ chatbot: CopilotType }>(`/${id}`);
 }
 
-// http://localhost:8888/backend/api/copilot/:id
+// https://robyn.zeonhq.com/backend/api/copilot/:id
 export async function deleteCopilot(id: string) {
   if (!id) throw new Error("Copilot id is required");
   return instance.delete<{
@@ -58,7 +58,7 @@ export async function createCopilot(copilot_name: string) {
     }
   })
 }
-// localhost:8888/backend/copilot/5a958877-63b6-47a5-afa3-621dc57e7d1b/variables
+// robyn.zeonhq.com/backend/copilot/5a958877-63b6-47a5-afa3-621dc57e7d1b/variables
 export async function getVariablesByBotId(id: string) {
   return (await instance.get<Record<string, string>>(`/${id}/variables`)).data;
 }

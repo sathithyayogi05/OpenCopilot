@@ -36,7 +36,7 @@ endif
 	@echo "$(COLOR_BOLD)=== 🟢 Running Alembic migrations ===$(COLOR_RESET)"
 	$(DOCKER_COMPOSE) exec -T llm-server sh -c "cd models && python setup_alembic.py && alembic upgrade head"
 	@echo "$(COLOR_BOLD)=== Installation completed ===$(COLOR_RESET)"
-	@echo "$(COLOR_BOLD)=== 🔥🔥 You can now access the dashboard at -> http://localhost:8888 ===$(COLOR_RESET)"
+	@echo "$(COLOR_BOLD)=== 🔥🔥 You can now access the dashboard at -> https://robyn.zeonhq.com ===$(COLOR_RESET)"
 	@echo "$(COLOR_BOLD)=== Enjoy! ===$(COLOR_RESET)"
 
 install-arm: 
@@ -50,7 +50,7 @@ endif
 	@echo "$(COLOR_BOLD)=== 🟢 Running Alembic migrations ===$(COLOR_RESET)"
 	$(DOCKER_COMPOSE) exec -T llm-server sh -c "cd models && python setup_alembic.py && alembic upgrade head"
 	@echo "$(COLOR_BOLD)=== Installation completed ===$(COLOR_RESET)"
-	@echo "$(COLOR_BOLD)=== 🔥🔥 You can now access the dashboard at -> http://localhost:8888 ===$(COLOR_RESET)"
+	@echo "$(COLOR_BOLD)=== 🔥🔥 You can now access the dashboard at -> https://robyn.zeonhq.com ===$(COLOR_RESET)"
 	@echo "$(COLOR_BOLD)=== Enjoy! ===$(COLOR_RESET)"
 
 migrate:
@@ -69,7 +69,7 @@ exec-llm-server:
 restart:
 	$(DOCKER_COMPOSE) restart
 	@echo "$(COLOR_BOLD)=== Restart completed ===$(COLOR_RESET)"
-	@echo "$(COLOR_BOLD)=== 🔥🔥 You can now access the dashboard at -> http://localhost:8888 ===$(COLOR_RESET)"
+	@echo "$(COLOR_BOLD)=== 🔥🔥 You can now access the dashboard at -> https://robyn.zeonhq.com ===$(COLOR_RESET)"
 	@echo "$(COLOR_BOLD)=== Enjoy! ===$(COLOR_RESET)"
 
 logs:

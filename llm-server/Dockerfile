@@ -9,7 +9,7 @@ COPY . /app/
 FROM common AS development
 EXPOSE 8002
 RUN pip install debugpy
-CMD ["python", "-m", "debugpy", "--listen", "0.0.0.0:5678", "--wait-for-client", "-m", "flask", "run", "--host=0.0.0.0", "--port=8002", "--reload"]
+CMD ["python", "-m", "debugpy", "--listen", "0.0.0.0:5679", "--wait-for-client", "-m", "flask", "run", "--host=0.0.0.0", "--port=8002", "--reload"]
 
 # Production stage
 FROM common AS production

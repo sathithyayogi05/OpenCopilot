@@ -14,7 +14,7 @@
                 "remoteRoot": "/app"
               }
             ],
-            "port": 5678,
+            "port": 5679,
             "host": "localhost"
         },
         {

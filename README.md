@@ -58,7 +58,7 @@ If you are using an ARM machine, specifically Mac Silicon, use the following com
 make install-arm
 ```
 
-Once the installation is complete, you can access the OpenCopilot console at [http://localhost:8888](http://localhost:8888).
+Once the installation is complete, you can access the OpenCopilot console at [https://robyn.zeonhq.com](https://robyn.zeonhq.com).
 
 ## Additional Commands
 
@@ -74,7 +74,7 @@ Once the installation is complete, you can access the OpenCopilot console at [ht
 
 This will install the necessary dependencies and set up the environment for the OpenCopilot project.
 
-Once the installation is complete, you can access the OpenCopilot console at http://localhost:8888
+Once the installation is complete, you can access the OpenCopilot console at https://robyn.zeonhq.com
 
 
 
@@ -126,8 +126,8 @@ Less than <10 lines of codes to implement on your web app or desktop app
 
 
 ### Important links
-- The backend server (API) is reachable via http://localhost:8888/backend
-- The dashboard server is reachable via http://localhost:8888/ 
+- The backend server (API) is reachable via https://robyn.zeonhq.com/backend
+- The dashboard server is reachable via https://robyn.zeonhq.com/ 
 - You can also [use our SDK](https://github.com/openchatai/typescript-sdk)
  
 

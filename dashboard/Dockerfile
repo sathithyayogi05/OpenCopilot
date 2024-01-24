@@ -38,7 +38,7 @@ FROM base AS runner
 # Set environment variables
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
-ENV PORT 8000
+ENV PORT 8004
 ENV HOSTNAME "0.0.0.0"
 
 WORKDIR /app
@@ -54,6 +54,6 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 USER nextjs
 
-EXPOSE 8000
+EXPOSE 8004
 
 CMD ["node", "server.js"]

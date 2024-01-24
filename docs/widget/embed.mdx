@@ -21,7 +21,7 @@ there are several ways you can integrate the Copilot Chat widget into your appli
 1. Download the latest build from [GitHub](https://github.com/openchatai/OpenCopilot/actions)
    and extract the zip file.
 
-2. Include the provided JavaScript file in the head of your document (use `http://localhost:8888/pilot.js` for local setup).
+2. Include the provided JavaScript file in the head of your document (use `https://robyn.zeonhq.com/pilot.js` for local setup).
    ```html
    <script src="https://cloud.opencopilot.so/pilot.js"></script>
    ```
@@ -30,8 +30,8 @@ there are several ways you can integrate the Copilot Chat widget into your appli
    ```html
    <script>
      const options = {
-        apiUrl: "https://api.opencopilot.so/backend" // your base url where your are hosting OpenCopilot at (the API), usually it's http://localhost:8888/backend
-        socketUrl: "https://api.opencopilot.so" // your socket server, usually it's http://localhost:8888/socket
+        apiUrl: "https://api.opencopilot.so/backend" // your base url where your are hosting OpenCopilot at (the API), usually it's https://robyn.zeonhq.com/backend
+        socketUrl: "https://api.opencopilot.so" // your socket server, usually it's https://robyn.zeonhq.com/socket
         initialMessage: "Hey! happy to help.", // optional: you can pass an array of messages that will be sent to the copilot when it's initialized
         token: "your_copilot_token_goes_here", // you can get your token from the dashboard
         triggerSelector: "#triggerSelector", // the selector of the element that will trigger the copilot when clicked
@@ -85,8 +85,8 @@ there are several ways you can integrate the Copilot Chat widget into your appli
 import { CopilotWidget,Root } from "@openchatai/copilot-widget"; // import the component
 import '@openchatai/copilot-widget/index.css' // the required styles
 const options = {
-  apiUrl: "https://api.opencopilot.so/backend" // your base url where your are hosting OpenCopilot at (the API), usually it's http://localhost:8888/backend
-  socketUrl: "https://api.opencopilot.so" // your socket server, usually it's http://localhost:8888/socket
+  apiUrl: "https://api.opencopilot.so/backend" // your base url where your are hosting OpenCopilot at (the API), usually it's https://robyn.zeonhq.com/backend
+  socketUrl: "https://api.opencopilot.so" // your socket server, usually it's https://robyn.zeonhq.com/socket
   initialMessage: "Hey! happy to help.", // optional: you can pass an array of messages that will be sent to the copilot when it's initialized
   token: "your_copilot_token_goes_here", // you can get your token from the dashboard
   defaultOpen: true,
